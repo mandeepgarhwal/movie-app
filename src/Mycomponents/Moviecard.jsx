@@ -1,13 +1,14 @@
 import React from 'react'
 import {useImage} from 'react-image'
+import bootstrap from 'bootstrap'
 
-function MyCardImage(imageurl) {
-    const {src} = useImage({
-      srcList: {imageurl},
-    })
+// function MyCardImage(imageurl) {
+//     const {src} = useImage({
+//       srcList: {imageurl},
+//     })
   
-    return <img src={src} className="card-img-top" alt="..." />
-  }
+//     return <img src={src} className="card-img-top" alt="..." />
+//   }
 
 export default function Moviecard(props) {
     console.log(props.names)
@@ -29,6 +30,7 @@ export default function Moviecard(props) {
         <h5 className="card-title" style={{textAlign : "center"}}>{props.names[0].title}</h5>
         <p className="card-text" style={{textAlign : "center"}}>{props.names[0].text}</p>
         {/* <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p> */}
+        <a href="#" class="btn btn-primary">Buy tickets</a>
       </div>
     </div>
     <div className="card" style={{display : "flex", flexDirection : "column", padding : "30px"} }>
@@ -38,6 +40,7 @@ export default function Moviecard(props) {
         <h5 className="card-title" style={{textAlign : "center"}}>{props.names[1].title}</h5>
         <p className="card-text" style={{textAlign : "center"}}>{props.names[1].text}</p>
         {/* <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p> */}
+        <a href="#" class="btn btn-primary">Buy tickets</a>
       </div>
     </div>
     <div className="card" style={{display : "flex", flexDirection : "column", padding : "30px"} }>
@@ -47,6 +50,7 @@ export default function Moviecard(props) {
         <h5 className="card-title" style={{textAlign : "center"}}>{props.names[2].title}</h5>
         <p className="card-text" style={{textAlign : "center"}}>{props.names[2].text}</p>
         {/* <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p> */}
+        <a href="#" class="btn btn-primary">Buy tickets</a>
       </div>
     </div>
   </div>
